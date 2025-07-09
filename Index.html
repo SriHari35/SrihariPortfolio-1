@@ -1,0 +1,71 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Hari | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sri Hari</h1>
+    <p>Future Computer Scientist 👨‍💻 | C, HTML, Git Learner</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <img src="profile.jpg" alt="Sri Hari" class="profile-pic">
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Sri Hari, a 1st-year CSE student learning to become a genius in the tech world. I love programming, building projects, and solving problems.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <ul>
+      <li>
+        <strong>Simple Calculator (C)</strong><br />
+        A command-line calculator that performs basic operations.  
+        <a href="https://github.com/yourusername/simple-calculator" target="_blank">View on GitHub</a>
+      </li>
+      <!-- Add more projects here -->
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C Programming</li>
+      <li>HTML & CSS</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: srihari35708@gmail.com</p>
+    <!-- Optional: Add a contact form later -->
+  </section>
+
+  <footer>
+    <p>© 2025 Sri Hari. Built with 💻 and Babata's help.</p>
+  </footer>
+</body>
+<button id="theme-toggle">🌙
+Switch Theme</button>
+<script>
+  const toggleBtn = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    toggleBtn.textContent = body.classList.contains("dark-mode")
+      ? "☀️ Light Mode"
+      : "🌙 Dark Mode";
+  });
+</script>
+</html>
